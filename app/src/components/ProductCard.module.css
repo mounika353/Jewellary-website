@@ -1,0 +1,14 @@
+.card { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 16px rgba(92,51,23,0.08); border: 1px solid #f0e4c8; transition: transform 0.2s, box-shadow 0.2s; cursor: pointer; display: flex; flex-direction: column; }
+.cardImg { background: linear-gradient(135deg, #fdf5e4, #fef0cc); height: 220px; display: flex; align-items: center; justify-content: center; font-size: 64px; position: relative; }
+.img { width: 100%; height: 100%; object-fit: cover; }
+.cardBody { padding: 16px; display: flex; flex-direction: column; flex-grow: 1; }
+.cardName { font-size: 15px; font-weight: 600; color: #2c1a0e; margin: 0 0 4px; }
+.cardCat { font-size: 11px; color: #c9a96e; letter-spacing: 1px; text-transform: uppercase; margin: 0 0 10px; }
+.priceContainer { display: flex; align-items: baseline; margin-top: auto; }
+.cardPrice { font-size: 18px; font-weight: 700; color: #5c3317; }
+.cardOriginal { font-size: 13px; color: #aaa; text-decoration: line-through; margin-left: 8px; }
+.addBtn { width: 100%; background: linear-gradient(135deg, #5c3317, #3d1a00); color: #d4af37; border: none; padding: 10px; border-radius: 8px; cursor: pointer; font-size: 13px; font-weight: 600; letter-spacing: 1px; margin-top: 12px; transition: opacity 0.2s; }
+.badge { position: absolute; top: 10px; font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 4px; letter-spacing: 1px; text-transform: uppercase; }
+.badgeNew { left: 10px; background: #d4af37; color: #1a0a00; }
+.badgeSpecial { right: 10px; background: #5c3317; color: #d4af37; }
+.discBadge { position: absolute; top: 10px; right: 10px; background: #e74c3c; color: white; font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 4px; }

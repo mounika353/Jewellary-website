@@ -31,10 +31,11 @@ const INITIAL_ITEMS = [
 const CATEGORIES = ["All", "Necklaces", "Rings", "Earrings", "Bangles", "Pendants", "Mangalsutras", "Bracelets", "Nose Pins"];
 
 const JEWELLERY_VIDEOS = [
-  { id: 1, title: "Gold Kundan Making Process", thumb: "/images/kundan_choker.png", video: "https://assets.mixkit.co/videos/preview/mixkit-golden-rings-with-diamonds-in-a-jewelry-box-41712-large.mp4" },
-  { id: 2, title: "Traditional Bridal Jewellery", thumb: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=400&q=80", video: "https://assets.mixkit.co/videos/preview/mixkit-hands-of-a-woman-holding-a-necklace-39733-large.mp4" },
-  { id: 3, title: "Diamond Polishing Art", thumb: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=400&q=80", video: "https://assets.mixkit.co/videos/preview/mixkit-golden-rings-with-diamonds-in-a-jewelry-box-41712-large.mp4" },
-  { id: 4, title: "Temple Jewellery Showcase", thumb: "https://images.unsplash.com/photo-1611085583191-a3b181a88401?w=400&q=80", video: "https://assets.mixkit.co/videos/preview/mixkit-hands-of-a-woman-holding-a-necklace-39733-large.mp4" },
+  { id: 1, title: "Traditional Gold Designs", thumb: "https://img.youtube.com/vi/YmWPv4P8Q3o/hqdefault.jpg", video: "https://www.youtube.com/watch?v=YmWPv4P8Q3o" },
+  { id: 2, title: "Bridal Jewellery Collection", thumb: "https://img.youtube.com/vi/VkinKG6TE0c/hqdefault.jpg", video: "https://www.youtube.com/watch?v=VkinKG6TE0c" },
+  { id: 3, title: "Diamond Showcase", thumb: "https://img.youtube.com/vi/cqItHo_-jRI/hqdefault.jpg", video: "https://www.youtube.com/watch?v=cqItHo_-jRI" },
+  { id: 4, title: "Temple Jewellery Elegance", thumb: "https://img.youtube.com/vi/wCDaAjIR6qo/hqdefault.jpg", video: "https://www.youtube.com/watch?v=wCDaAjIR6qo" },
+  { id: 5, title: "Bridal Walk Promotional Ad", thumb: "https://img.youtube.com/vi/RVLKRK3fYyc/hqdefault.jpg", video: "https://www.youtube.com/watch?v=RVLKRK3fYyc" },
 ];
 
 export default function JewelleryWebsite() {
@@ -351,7 +352,7 @@ export default function JewelleryWebsite() {
             </div>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "20px" }}>
               {JEWELLERY_VIDEOS.map(v => (
-                <div key={v.id} style={{ position: "relative", borderRadius: "16px", overflow: "hidden", cursor: "pointer", boxShadow: "0 4px 16px rgba(92,51,23,0.12)", border: "1px solid #e8d5b0", transition: "transform 0.2s" }} onClick={() => window.open(`https://www.youtube.com/results?search_query=${encodeURIComponent(v.title)}`, '_blank')}>
+                <div key={v.id} style={{ position: "relative", borderRadius: "16px", overflow: "hidden", cursor: "pointer", boxShadow: "0 4px 16px rgba(92,51,23,0.12)", border: "1px solid #e8d5b0", transition: "transform 0.2s" }} onClick={() => window.open(v.video, '_blank')}>
                   <img src={v.thumb} alt={v.title} style={{ width: "100%", height: "180px", objectFit: "cover", display: "block" }} />
                   <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,0.7), transparent 60%)", display: "flex", alignItems: "center", justifyContent: "center" }}>
                     <div style={{ width: "56px", height: "56px", borderRadius: "50%", background: "rgba(212,175,55,0.9)", display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "0 4px 20px rgba(0,0,0,0.4)" }}>

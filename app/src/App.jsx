@@ -367,7 +367,7 @@ export default function JewelleryWebsite() {
           </div>
 
           {/* Live Gold Price */}
-          <div style={{ ...styles.section, background: "linear-gradient(135deg, #fdf5e4, white)", borderRadius: "20px", margin: "0 32px 32px", border: "1px solid #e8d5b0" }}>
+          <div style={{ ...styles.section, background: "linear-gradient(135deg, #fdf5e4, white)", borderRadius: "20px", margin: "0 auto 32px", width: "calc(100% - 64px)", border: "1px solid #e8d5b0" }}>
             <div style={styles.sectionTitle}><span>Today's Gold Rate</span><span style={{ fontSize: "12px", color: "#888", fontWeight: "400", letterSpacing: "1px" }}>Updated: {lastUpdated} IST</span></div>
             <div style={styles.goldGrid}>
               {Object.entries(GOLD_PRICES).map(([key, g]) => (
